@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Computer Architecture Simulators</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans flex flex-col justify-between">
+  <div>
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur py-8 px-6 text-center">
+      <div class="max-w-5xl mx-auto">
+        <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-full text-xs font-semibold uppercase tracking-wider">Educational STEM Suite</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white mt-4 mb-3 tracking-tight">Computer Architecture Simulators</h1>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+          Interactive, visual, and web-based educational tools for exploring RAM & Cache memory, Virtual Memory Paging, Page Replacement Algorithms, and CPU Instruction Pipelining.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Simulator 1: RAM & Cache -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-indigo-600/20 border border-indigo-500/30 rounded-xl flex items-center justify-center text-2xl mb-4 text-indigo-400">⚡</div>
+            <h2 class="text-2xl font-bold text-white mb-2">RAM & Cache Memory Simulator</h2>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Visualize cache mapping policies (Direct, Associative, Set-Associative), cache hit/miss latency, write strategies, and memory hierarchy data flow.
+            </p>
+          </div>
+          <a href="simulators/cache-memory/index.html" class="inline-flex items-center justify-center w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl transition text-sm">
+            Launch Simulator →
+          </a>
+        </div>
+
+        <!-- Simulator 2: Page Fault -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-cyan-600/20 border border-cyan-500/30 rounded-xl flex items-center justify-center text-2xl mb-4 text-cyan-400">📟</div>
+            <h2 class="text-2xl font-bold text-white mb-2">Page Fault & Replacement Simulator</h2>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Simulate page fault resolution using FIFO, LRU, Optimal, and Clock algorithms. Inspect frame allocations, page hits/faults, and Belady's Anomaly.
+            </p>
+          </div>
+          <a href="simulators/page-fault/index.html" class="inline-flex items-center justify-center w-full py-3 px-4 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-xl transition text-sm">
+            Launch Simulator →
+          </a>
+        </div>
+
+        <!-- Simulator 3: Paging System -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-emerald-600/20 border border-emerald-500/30 rounded-xl flex items-center justify-center text-2xl mb-4 text-emerald-400">🧩</div>
+            <h2 class="text-2xl font-bold text-white mb-2">Virtual Memory Paging Simulator</h2>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Interactive translation of Logical Addresses to Physical Addresses using Page Tables, TLB (Translation Lookaside Buffer), page numbers, and offsets.
+            </p>
+          </div>
+          <a href="simulators/paging-system/index.html" class="inline-flex items-center justify-center w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-xl transition text-sm">
+            Launch Simulator →
+          </a>
+        </div>
+
+        <!-- Simulator 4: Instruction Cycle & Pipeline -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-amber-600/20 border border-amber-500/30 rounded-xl flex items-center justify-center text-2xl mb-4 text-amber-400">⚙️</div>
+            <h2 class="text-2xl font-bold text-white mb-2">Instruction Cycle & Pipeline</h2>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Step through CPU micro-operations for Fetch, Decode, Execute phases, and simulate pipeline stages, structural/data hazards, and instruction throughput.
+            </p>
+          </div>
+          <a href="simulators/instruction-cycle/index.html" class="inline-flex items-center justify-center w-full py-3 px-4 bg-amber-600 hover:bg-amber-500 text-white font-medium rounded-xl transition text-sm">
+            Launch Suite →
+          </a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
+    <p>Developed by <a href="https://github.com/DAG94S" class="text-slate-300 hover:underline font-medium">Diego García (DAG94S)</a> — Computer Architecture & Software Engineering Lecturer.</p>
+  </footer>
+</body>
+</html>

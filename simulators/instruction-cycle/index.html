@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instruction Cycle & Pipeline Simulators</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-8 flex flex-col justify-center items-center font-sans">
+  <div class="max-w-4xl w-full">
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-extrabold text-indigo-400 mb-2">Instruction Cycle & Pipeline Simulators</h1>
+      <p class="text-slate-400">Interactive tools for visualizing CPU Fetch, Decode, Execute phases and Instruction Pipelining.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="pipeline.html" class="block p-6 bg-slate-800 border border-slate-700 rounded-xl hover:border-indigo-500 hover:shadow-lg transition">
+        <h2 class="text-2xl font-bold text-indigo-300 mb-2">🚀 Instruction Pipeline</h2>
+        <p class="text-slate-400 text-sm">Visualize multi-stage CPU pipelining, hazards, stall cycles, and execution throughput.</p>
+      </a>
+
+      <a href="ciclo-fetch.html" class="block p-6 bg-slate-800 border border-slate-700 rounded-xl hover:border-cyan-500 hover:shadow-lg transition">
+        <h2 class="text-2xl font-bold text-cyan-300 mb-2">📥 Fetch Phase Simulator</h2>
+        <p class="text-slate-400 text-sm">Explore Program Counter (PC), Memory Address Register (MAR), and Instruction Register (IR) operations.</p>
+      </a>
+
+      <a href="ciclo-decode.html" class="block p-6 bg-slate-800 border border-slate-700 rounded-xl hover:border-emerald-500 hover:shadow-lg transition">
+        <h2 class="text-2xl font-bold text-emerald-300 mb-2">🔍 Decode Phase Simulator</h2>
+        <p class="text-slate-400 text-sm">Analyze opcode decoding, register operand identification, and control unit signal generation.</p>
+      </a>
+
+      <a href="ciclo-execute.html" class="block p-6 bg-slate-800 border border-slate-700 rounded-xl hover:border-amber-500 hover:shadow-lg transition">
+        <h2 class="text-2xl font-bold text-amber-300 mb-2">⚡ Execute Phase Simulator</h2>
+        <p class="text-slate-400 text-sm">Simulate ALU arithmetic and logic operations, flags, and memory write-back mechanisms.</p>
+      </a>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="../../index.html" class="inline-block px-5 py-2 bg-slate-700 text-slate-200 rounded-lg hover:bg-slate-600 transition">← Back to Main Simulator Hub</a>
+    </div>
+  </div>
+</body>
+</html>
